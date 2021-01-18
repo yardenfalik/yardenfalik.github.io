@@ -7,7 +7,7 @@ body {
 }
 
 #header {
-  background-color: #1abc9c;
+  background-color: #F6A623;
   height: 150px;
   line-height: 150px;
 }
@@ -74,7 +74,7 @@ a {
 }
 
 a:hover {
-  color: #F6A623;
+  color: #1abc9c;
 }
 
 .post, .about, .contact {
