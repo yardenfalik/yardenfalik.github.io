@@ -143,3 +143,7 @@ background-color: #333333;
 .contact-title, .about-title {
   color: white;
 }
+
+img:hover {
+  filter: brightness(0.7);
+}
