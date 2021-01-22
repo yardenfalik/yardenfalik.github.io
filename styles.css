@@ -144,6 +144,6 @@ background-color: #333333;
   color: white;
 }
 
-img:hover {
+.post-author img:hover {
   filter: brightness(0.7);
 }
