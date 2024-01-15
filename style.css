@@ -1,7 +1,29 @@
 :root {
-    --background-color: #101010;
+    --background-color: #0E0E0E;
     --color: #ffffff;
-  }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none;
+    background: #f1f1f100; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #00000000; 
+    border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #303030; 
+}
 
 html {
     scroll-behavior: smooth;
@@ -10,8 +32,7 @@ html {
 body {
     background-color: var(--background-color);
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-    color: #ffffff;
-    overflow: hidden;
+    color: var(--color);
 
     background-size: 40px 40px;
     background-image: radial-gradient(circle, #ffffff 1px, #00000000 1px);
@@ -26,11 +47,32 @@ header button {
     border-radius: 20px;
     cursor: pointer;
 
+    box-shadow: 0 8px 32px 0 #0000005e;
+
     background: linear-gradient(to right, var(--background-color) 50%, #ffffff 50%);
     background-size: 200% 100%;
     background-position:left bottom;
     margin-left:10px;
     transition:all 0.5s ease;
+}
+
+nav {
+    background: #00000040;
+    box-shadow: 0 8px 32px 0 #0000005e;
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 50px;
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: solid 2px #30303040;
+    padding: 7px 6px 7px 6px;
+}
+
+nav:hover {
+    background: #26262640;
 }
 
 header button:hover {
@@ -42,6 +84,8 @@ header h1 {
     margin: 0;
     width: auto;
     padding: 0 0 0 20px;
+
+    box-shadow: 0 8px 32px 0 #0000005e;
 }
 
 header a {
@@ -56,23 +100,28 @@ header {
     width: 100vw;
     height: 60px;
     position:fixed;
-    top:0;
+    top: 0;
+    margin-top: 30px;
 }
 
-.cta {
-    margin-left: auto;
-}
-
-nav {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-.nav_links li {
+.nav_links a {
     display: inline-block;
     padding: 0px 20px;
+
+    border-radius: 20px;
+
+    background-color: #30303040;
+    padding: 7px 15px 7px 15px;
+    margin: 0px 5px 0px 5px;
+}
+
+.nav_links a:hover {
+    background-color: #30303084;
+}
+
+.nav_links {
+    padding-left: 0px;
+    top: 40px;
 }
 
 .about a, .contact a {
@@ -101,7 +150,7 @@ nav {
 
 .title-container {
     width: 750px;
-    margin: 80px auto;
+    margin: 0px auto;
     padding: 0;
     display:flex;
 }
@@ -122,8 +171,16 @@ section {
 }
 
 @media screen and (max-width: 450px) {
-    .about {
+    .title-container, .about {
         width: 100%;
         margin: 0;
+    }
+
+    nav {
+        margin-left: 50px;
+    }
+
+    header h1 {
+        display: none;
     }
 }
