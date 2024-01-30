@@ -275,6 +275,18 @@ header {
     background-color: gradient(to right, #ff0000, #00000000);
 }
 
+.contactButtonSmall {
+    padding: 10px;
+}
+
+.contactButtonSmall > button {
+    padding: 10px;
+}
+
+.contactButton {
+    display: block;
+}
+
 @media screen and (max-width: 450px) {
     .title-container, .about {
         width: 100%;
@@ -286,6 +298,14 @@ header {
     }
 
     header h1 {
+        display: none;
+    }
+
+    .contactButtonSmall {
+        display: block;
+    }
+
+    .contactButton {
         display: none;
     }
 }
