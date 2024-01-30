@@ -7,10 +7,25 @@
     <title>Yarden</title>
 </head>
 <body>
+  <div class="backgroundColors" id="backgroundColors">
+    <div class="blur"></div>
+    <div class="frame"></div>
+    <div class="circles" id="circles">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+  </div>
     <header>
         <a href="#"><h1>yarden.</h1></a>
         <nav>
           <div class="nav_links" style="display: flex; justify-content: center;">
+            <a href="#">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
           </div>
@@ -21,16 +36,54 @@
       <h1 class="title"><strong>Hi!</strong> I'm <strong>Yarden</strong>. <img class="wave" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f44b.svg" width="80px"></h1>
     </section>
 
+    <div class="blur" style="z-index: -5;  height: 115%;"></div>
     <section id="about" class="about">
-      <br>
-      <div class="text">
-        <p>I'm <strong>18</strong> year old, <strong>Full Stack Developer</strong>, I have knowledge and experience working with a wide range of programming languages including C++, Python, C, Java, JavaScript, HTML, and CSS.</p>
-        <p>I am <strong>multilingual</strong> and can speak Hebrew, English, and a bit Italian</p>
+      <h1>About</h1>
+      <div class="aboutContent">
+        <div class="blob"></div>
+        <div class="text">
+          <p>I'm <strong>18</strong> year old, <strong>Full Stack Developer</strong>, I have knowledge and experience working with a wide range of programming languages including C++, Python, C, Java, JavaScript, HTML, and CSS.</p>
+          <p>I am <strong>multilingual</strong> and can speak Hebrew, English, and a bit Italian</p>
+        </div>
+        <div></div>
       </div>
     </section>
     
     <section id="projects" class="projects">
-      <h1 class="title">Projects</h1>
+      <h1>Projects</h1>
+      <br>
+      <div class="projectTiles">
+        <a href="https://github.com/yardenfalik/School-Website-Project">
+          <div class="projectTile">
+            <img src="https://cdn.discordapp.com/attachments/1063883389935042671/1199718192080228473/image.png?ex=65c38fa2&is=65b11aa2&hm=2f207ffdc6fc79249bffce14468785eefe2ee2666fe7568631faa3dafd27b337&" alt="">
+            <h1 class="goButton">↗</h1>
+            <h2>School Website Project</h2>
+          </div>
+        </a>
+        <a href="https://github.com/yardenfalik/The-Sea-Merchant">
+          <div class="projectTile">
+            <img src="https://cdn.discordapp.com/attachments/1063883389935042671/1199718280764604426/image.png?ex=65c38fb7&is=65b11ab7&hm=56f854760f68127b15f9adad8a7f2e8d947ac2216b50e4f35d7790cfd841551f&" alt="">
+            <h1 class="goButton">↗</h1>
+            <h2>The Sea Merchant</h2>
+          </div>
+        </a>
+        <a href="https://github.com/yardenfalik/MiningGame">
+          <div class="projectTile">
+            <img src="https://cdn.discordapp.com/attachments/1063883389935042671/1199718299722854420/image.png?ex=65c38fbc&is=65b11abc&hm=7be9e36fe188c4bde57bbdd771b634601d4ef1a61019c1ddc7a64262dc46422c&" alt="">
+            <h1 class="goButton">↗</h1>
+            <h2>Mining Game</h2>
+          </div>
+        </a>
+        <a href="https://github.com/yardenfalik/News-For-Email">
+          <div class="projectTile">
+            <img src="https://cdn.discordapp.com/attachments/1063883389935042671/1199729233409351770/image.png?ex=65c399eb&is=65b124eb&hm=a0eba1831cc7fef2a5c9ef94a30ccce5de5e479d95be6603882d7913b6a6dcd8&" alt="">
+            <h1 class="goButton">↗</h1>
+            <h2>News For Email</h2>
+          </div>
+        </a>
+      </div>
+      <br>
+      <a href="https://github.com/yardenfalik"><button>see more projects</button></a>
     </section>
 
     <section id="contact" class="contact">
