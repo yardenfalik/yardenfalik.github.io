@@ -276,7 +276,7 @@ header {
 }
 
 .contactButtonSmall {
-    padding: 10px;
+    display: none;
 }
 
 .contactButtonSmall > button {
