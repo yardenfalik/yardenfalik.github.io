@@ -101,7 +101,8 @@ header button:hover {
 header h1 {  
     margin: 0;
     width: auto;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 35px;
+    top: 0;
     text-shadow: 2px 2px 8px #0000005e;
 }
 
@@ -118,7 +119,7 @@ header {
     height: 60px;
     position:fixed;
     top: 0;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .nav_links a {
@@ -308,6 +309,18 @@ header {
     .contactButton {
         display: none;
     }
+
+    .title-container h1 {
+        margin-left: 50px;
+    }
+
+    .text, .about > h1, .projects > h1 {
+        text-align: center;
+    }
+
+    .projectTiles {
+        grid-template-columns: auto;
+    }
 }
 
 .circles .circle {
@@ -351,31 +364,6 @@ header {
     outline: 50px solid var(--background-color);
     outline-offset: -40px;
     border-radius: 20px;
-}
-
-.circle:nth-child(1) {
-    background-color: #00b1b1e6;
-}
-.circle:nth-child(2) {
-    background-color: #be0562e6;
-}
-.circle:nth-child(3) {
-    background-color: #1e1157e6;
-}
-.circle:nth-child(4) {
-    background-color: #00cfa2e6;
-}
-.circle:nth-child(5) {
-    background-color: #6800b3e6;
-}
-.circle:nth-child(6) {
-    background-color: #ff2b00e6;
-}
-.circle:nth-child(7) {
-    background-color: #0300bde6;
-}
-.circle:nth-child(8) {
-    background-color: #bdba00e6;
 }
 
 .blob {
