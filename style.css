@@ -191,6 +191,11 @@ header {
     justify-content: center;
 }
 
+.projects > a {
+    display: flex;
+    justify-content: center;
+}
+
 .projects > a button:hover {
     background-color: var(--color);
     color: var(--background-color);
