@@ -120,6 +120,7 @@ header {
     position:fixed;
     top: 0;
     margin-top: 40px;
+    z-index: 10;
 }
 
 .nav_links a {
@@ -215,7 +216,7 @@ header {
 }
 
 .projectTile:hover  {
-    transform: scale(1.01);
+    transform: scale(1.1);
     transition: all 0.5s ease;
 }
 
