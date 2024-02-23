@@ -50,6 +50,7 @@ a {
 section {
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 .title-container, .about, .contact {
@@ -269,7 +270,6 @@ header {
     margin: 0px auto;
     padding: 0;
     display:flex;
-    overflow: hidden;
 }
 
 .title-container h1 {
