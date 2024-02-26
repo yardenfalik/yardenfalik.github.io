@@ -222,7 +222,7 @@ header {
 }
 
 .projectTile:hover  {
-    transform: scale(1.1);
+    transform: scale(1.02);
     transition: all 0.5s ease;
 }
 
@@ -263,6 +263,17 @@ header {
 
 .projectTile:hover > .goButton {
     display: block;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateY(20%);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .title-container {
