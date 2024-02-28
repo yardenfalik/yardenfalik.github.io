@@ -5,28 +5,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    display: none;
-    background: #f1f1f100; 
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #00000000; 
-    border-radius: 2px;
-}
-
-::-webkit-scrollbar-track:hover {
-    display: none;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #303030; 
+    width: 0px;
 }
 
 html {
@@ -41,6 +20,7 @@ body {
     background-size: 40px 40px;
     background-image: radial-gradient(circle, #ffffff 1px, #00000000 1px);
     width: 100%;
+    margin: 0;
 }
 
 a {
