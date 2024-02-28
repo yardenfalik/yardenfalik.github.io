@@ -160,6 +160,7 @@ header {
     width: 750px;
     margin: 80px auto;
     padding: 0;
+    text-align: center;
 }
 
 .aboutContent, .contact {
