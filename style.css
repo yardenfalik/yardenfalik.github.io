@@ -222,7 +222,7 @@ header {
 }
 
 .projectTile:hover  {
-    transform: scale(1.02);
+    border-radius: 0px;
     transition: all 0.5s ease;
 }
 
