@@ -136,20 +136,46 @@ header {
     border-color: #0366D6;
     border-bottom: 1px solid #0366D6;
 }
+
+.about {
+    width: 750px;
+}
+
 .about, .contact {
-    /* width: 750px; */
-    /* margin: 80px auto; */
+    display: grid;
+    place-items: center;
+    align-content: center;
+    margin: 60px auto;
+
     padding: 0;
     text-align: center;
     overflow: hidden;
     border-radius: 40px;
 }
 
-.aboutContent, .contact {
-    display: flex;
-    align-items: center;
-    width: 750px;
-    margin: 60px auto;
+.contact > h1 {
+    color: #E8E8E3;
+    font-size: 9rem;
+    margin: auto;
+    transition: all 0.3s ease 0s;
+    border-bottom: 5px solid transparent;
+    cursor: default;
+}
+
+.contact > h1:hover {
+    border-bottom: 5px solid #ffffff;
+}
+
+.contact > .text {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.contact > .blob {
+    width: 50%;
+    height: 50vw;
+    background-color: #393632;
+    opacity: 0.3;
 }
 
 .projects {
@@ -158,7 +184,7 @@ header {
     height: 150vh;
 }
 
-.projects h1, .about h1, .contact h1{
+.projects h1, .about h1 {
     font-size: 3rem;
 }
 
@@ -346,8 +372,12 @@ header {
 }
 
 @media screen and (max-width: 450px) {
-    .title-container, .about > .aboutContent {
+    .title-container, .about > .aboutContent, .contact{
         width: 90%;
+    }
+
+    .contact > h1 {
+        font-size: 7rem;
     }
 
     nav {
