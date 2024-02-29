@@ -137,15 +137,19 @@ header {
     border-bottom: 1px solid #0366D6;
 }
 .about, .contact {
-    width: 750px;
-    margin: 80px auto;
+    /* width: 750px; */
+    /* margin: 80px auto; */
     padding: 0;
     text-align: center;
+    overflow: hidden;
+    border-radius: 40px;
 }
 
 .aboutContent, .contact {
     display: flex;
     align-items: center;
+    width: 750px;
+    margin: 60px auto;
 }
 
 .projects {
@@ -289,41 +293,6 @@ header {
     display: block;
 }
 
-@media screen and (max-width: 450px) {
-    .title-container, .about {
-        width: 100%;
-        margin: 0;
-    }
-
-    nav {
-        margin-left: 30px;
-    }
-
-    header h1 {
-        display: none;
-    }
-
-    .contactButtonSmall {
-        display: block;
-    }
-
-    .contactButton {
-        display: none;
-    }
-
-    .title-container h1 {
-        margin-left: 50px;
-    }
-
-    .text, .about > h1, .projects > h1 {
-        text-align: center;
-    }
-
-    .projectTiles {
-        grid-template-columns: auto;
-    }
-}
-
 .circles .circle {
     height: 300px;
     width: 300px;
@@ -374,4 +343,42 @@ header {
     border-radius: 50%;
     position: absolute;
     background-color: #EBEBEBe6;
+}
+
+@media screen and (max-width: 450px) {
+    .title-container, .about > .aboutContent {
+        width: 90%;
+    }
+
+    nav {
+        margin-left: 30px;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    .contactButtonSmall {
+        display: block;
+    }
+
+    .contactButton {
+        display: none;
+    }
+
+    .title-container h1 {
+        margin-left: 50px;
+    }
+
+    .text, .about > h1, .projects > h1 {
+        text-align: center;
+    }
+
+    .projectTiles {
+        grid-template-columns: auto;
+    }
+
+    .blob {
+        width: 100px;
+    }
 }
