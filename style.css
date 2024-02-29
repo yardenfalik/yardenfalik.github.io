@@ -1,6 +1,6 @@
 :root {
     --background-color: #0E0E0E;
-    --color: #ffffff;
+    --color: #E8E8E3;
 }
 
 /* width */
@@ -16,9 +16,6 @@ body {
     background-color: var(--background-color);
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
     color: var(--color);
-
-    background-size: 40px 40px;
-    background-image: radial-gradient(circle, #ffffff 1px, #00000000 1px);
     width: 100%;
     margin: 0;
 }
@@ -154,16 +151,15 @@ header {
 }
 
 .contact > h1 {
-    color: #E8E8E3;
     font-size: 9rem;
     margin: auto;
-    transition: all 0.3s ease 0s;
+    transition: border-bottom 0.3s ease 0s;
     border-bottom: 5px solid transparent;
     cursor: default;
 }
 
 .contact > h1:hover {
-    border-bottom: 5px solid #ffffff;
+    border-bottom: 5px solid var(--color);
 }
 
 .contact > .text {
@@ -174,14 +170,17 @@ header {
 .contact > .blob {
     width: 50%;
     height: 50vw;
-    background-color: #393632;
-    opacity: 0.3;
+    background: #51515140;
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+
+    background-image: linear-gradient(130deg, #1E1E1E, #0E0E0E);
 }
 
 .projects {
-    width: 95%;
-    margin: 10px auto;
     height: 150vh;
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, #ffffff 1px, #00000000 1px);
 }
 
 .projects h1, .about h1 {
@@ -208,6 +207,11 @@ header {
     justify-content: center;
 }
 
+.projects > h1 {
+    margin: 10px auto;
+    width: 95%;
+}
+
 .projects > a button:hover {
     background-color: var(--color);
     color: var(--background-color);
@@ -217,6 +221,8 @@ header {
     display: grid;
     grid-template-columns: auto auto;
     gap: 10px;
+    width: 95%;
+    margin: 10px auto;
 }
 
 .projectTiles > a {
@@ -289,7 +295,7 @@ header {
 
 .title-container {
     width: 750px;
-    margin: 0px auto;
+    margin: auto;
     padding: 0;
     display:flex;
 }
@@ -298,13 +304,21 @@ header {
     font-size: 5rem;
     justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
     margin-top: 0;
     margin-left: 25px;
 }
 
 .backgroundColors {
-    background-color: gradient(to right, #ff0000, #00000000);
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    border-radius: 20px;
+    z-index: -2;
+    top: 2em;
+    bottom: 2em;
+    left: 2em;
+    right: 2em;
+
 }
 
 .contactButtonSmall {
@@ -333,18 +347,6 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-}
-
-.backgroundColors {
-    z-index: -2;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
 }
 
 .frame {
@@ -410,5 +412,20 @@ header {
 
     .blob {
         width: 100px;
+    }
+
+    .frame {
+        display: none;
+    }
+
+    .backgroundColors {
+        overflow: hidden;
+        position: absolute;
+        display: block;
+        border-radius: 0 0 20px 20px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 }
