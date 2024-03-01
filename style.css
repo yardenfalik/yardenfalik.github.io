@@ -3,6 +3,11 @@
     --color: #E8E8E3;
 }
 
+::selection {
+    color: #323232;
+    background: #E8E8E3;  
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 0px;
