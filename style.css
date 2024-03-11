@@ -68,8 +68,7 @@ nav {
     display: flex;
     justify-content: center;
     margin: auto;
-    border: solid 2px #30303040;
-    padding: 7px 6px 7px 6px;
+    padding: 3.5px 3px 3.5px 3px;
 }
 
 nav:hover {
@@ -112,14 +111,8 @@ header {
     padding: 0px 20px;
 
     border-radius: 20px;
-
-    background-color: #30303040;
     padding: 7px 15px 7px 15px;
     margin: 0px 5px 0px 5px;
-}
-
-.nav_links a:hover {
-    background-color: #30303084;
 }
 
 .nav_links {
