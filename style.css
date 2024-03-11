@@ -134,7 +134,8 @@ header {
 }
 
 .about {
-    width: 750px;
+    width: 1000px;
+    font-size: 200%;
 }
 
 .about, .contact {
