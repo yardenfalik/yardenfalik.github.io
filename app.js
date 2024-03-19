@@ -7,6 +7,19 @@ let screenHeight = screen.height;
 
 let HowManyCircle = (screenWidth / 320)*(screenHeight / 360);
 
+var yarden = `                              888                   
+                              888                   
+                              888                   
+888  888  8888b.  888d888 .d88888  .d88b.  88888b.  
+888  888     "88b 888P"  d88" 888 d8P  Y8b 888 "88b 
+888  888 .d888888 888    888  888 88888888 888  888 
+Y88b 888 888  888 888    Y88b 888 Y8b.     888  888 
+ "Y88888 "Y888888 888     "Y88888  "Y8888  888  888 
+     888                                            
+Y8b d88P                                            
+ "Y88P"`;
+console.log(yarden);
+
 for (let i = 0; i < HowManyCircle; i++) {
     let circle = document.createElement('div');
     circle.classList.add('circle');
@@ -14,8 +27,6 @@ for (let i = 0; i < HowManyCircle; i++) {
 }
 
 setInterval(setColors, intervalTime);
-
-console.log(screenHeight);
 
 function setColors() 
 {
