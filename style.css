@@ -153,13 +153,7 @@ header {
 .contact > h1 {
     font-size: 9rem;
     margin: auto;
-    transition: border-bottom 0.3s ease 0s;
-    border-bottom: 5px solid transparent;
     cursor: default;
-}
-
-.contact > h1:hover {
-    border-bottom: 5px solid var(--color);
 }
 
 .contact > .text {
@@ -371,6 +365,44 @@ header {
     border-radius: 50%;
     position: absolute;
     background-color: #EBEBEBe6;
+}
+
+.lightMode {
+    background-color: #ffffff;
+    color: #1D1D1F;
+}
+
+.lightMode .contact > .blob {
+    background: #E8E8E340;
+    background-image: linear-gradient(130deg, #E8E8E3, #ffffff);
+}
+
+.lightMode .projects {
+    background-image: radial-gradient(circle, #E8E8E3 3px, #00000000 3px);
+}
+
+.lightMode .themeButton {
+    background-color: #0E0E0E;
+}
+
+.lightMode header h1 {
+    color: #1D1D1F;
+}
+
+.themeButton {
+    border: none;
+    background-color: #ffffff;
+    color: #1D1D1F;
+    height: 50px;
+    width: 50px;
+    font-size: 200%;
+    border-radius: 50%;
+    padding: 0;
+    padding-bottom: 2.5px;
+    margin-left: 50px;
+    
+    position: fixed;
+    bottom: 50px;
 }
 
 @media screen and (max-width: 450px) {

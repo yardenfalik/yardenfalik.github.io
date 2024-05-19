@@ -36,6 +36,21 @@ function setColors()
     }
 }
 
+function lightMode() 
+{
+    themeButton = document.getElementById('themeButton');
+
+    if (document.body.className === 'lightMode') 
+    {
+        themeButton.innerHTML = '☀️';
+        document.body.className = 'darkMode';
+        return;
+    }
+
+    themeButton.innerHTML = '🌙';
+    document.body.className = 'lightMode';
+}
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
