@@ -35,14 +35,3 @@ function setColors()
         children.item(i).style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
     }
 }
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        }
-    });
-});
-
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((element) => observer.observe(element));

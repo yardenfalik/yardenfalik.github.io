@@ -178,7 +178,7 @@ header {
 }
 
 .projects {
-    height: 150vh;
+    height: 175%;
     background-size: 40px 40px;
     background-image: radial-gradient(circle, #ffffff 1px, #00000000 1px);
 }
@@ -373,7 +373,7 @@ header {
     background-color: #EBEBEBe6;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
     .title-container, .about > .aboutContent, .contact{
         width: 90%;
     }
