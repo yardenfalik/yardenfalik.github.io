@@ -35,8 +35,46 @@ section {
     height: 100vh;
 }
 
-.title-container, .about, .contact {
+.about, .contact {
+    display: grid;
     align-items: center;
+}
+
+.title-container {
+    width: 750px;
+    margin: auto;
+    padding: 0;
+    display: grid;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container h1 {
+    font-size: 5rem;
+    margin-top: auto;   
+}
+
+.title {
+    text-align: center;
+    margin: 0;
+}
+
+.arrowBtn {
+    margin: auto;
+    animation: arrow 4s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 header button {
@@ -287,21 +325,6 @@ header {
     transform: translateY(0);
 }
 
-.title-container {
-    width: 750px;
-    margin: auto;
-    padding: 0;
-    display:flex;
-}
-
-.title-container h1 {
-    font-size: 5rem;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-    margin-left: 25px;
-}
-
 .backgroundColors {
     overflow: hidden;
     position: absolute;
@@ -429,10 +452,6 @@ header {
 
     .contactButton {
         display: none;
-    }
-
-    .title-container h1 {
-        margin-left: 50px;
     }
 
     .text, .about > h1, .projects > h1 {
