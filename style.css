@@ -176,6 +176,38 @@ header {
     font-size: 200%;
 }
 
+.aboutContent > .blob {
+    animation: blob 60s infinite;
+}
+
+@keyframes blob {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(65vw);
+    }
+}
+
+.secondBlob {
+    z-index: -10;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #EBEBEBe6;
+    animation: secondBlob 60s infinite;
+}
+
+@keyframes secondBlob {
+    0%, 100% {
+        transform: translateX(65vw);
+    }
+    50% {
+        transform: translateX(0);
+    }
+}
+
 .about, .contact {
     display: grid;
     place-items: center;
