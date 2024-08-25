@@ -1,0 +1,118 @@
+:root {
+    --background-color: #0E0E0E;
+    --color: #E8E8E3;
+}
+
+::selection {
+    color: #323232;
+    background: #E8E8E3;  
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    color: var(--color);
+    width: 100%;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, #ffffff 1px, #00000000 1px);
+}
+
+main {
+    margin: 0 0 0 20px;
+}
+
+button {
+    color: var(--color);
+    border: solid 2px var(--color);
+    padding: 10px 25px;
+    font-size: 1rem;
+    border-radius: 20px;
+
+    box-shadow: 0 8px 32px 0 #0000005e;
+
+    background-color: var(--background-color);
+    transition:all 0.5s ease;
+    margin: auto;
+}
+
+button:hover {
+    background-color: var(--color);
+    color: var(--background-color);
+}
+
+h1 {
+    font-size: 5rem;
+    margin-top: auto;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-top: auto;
+    font-style: italic;
+    margin: 0;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-top: auto;
+    margin: 0;
+    margin-left: 20px;
+}
+
+a {
+    font-size: 2rem;
+    margin-top: auto;
+    margin: 0;
+    margin-left: 20px;
+
+    font-weight: bold;
+
+    color: var(--color);
+    text-decoration: none;
+    text-decoration: underline;
+
+    transition: all 0.5s ease;
+}
+
+a:hover {
+    font-size: 2.5rem;
+    transition: all 0.5s ease;
+}
+
+.GitHubBtn {
+    text-decoration: none;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+
+    margin: 20px auto;
+}
+
+.backBtn {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+@media screen and (max-width: 450px) {
+
+    .backBtn {
+        display: none;
+    }
+
+}
