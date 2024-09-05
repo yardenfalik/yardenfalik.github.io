@@ -42,12 +42,12 @@ function lightMode()
 
     if (document.body.className === 'lightMode') 
     {
-        themeButton.innerHTML = '☀️';
+        themeButton.innerHTML = '<img src="img/moonIcon.png" class="moonIcon">';
         document.body.className = 'darkMode';
         return;
     }
 
-    themeButton.innerHTML = '🌙';
+    themeButton.innerHTML = '<img src="img/sunIcon.png" class="sunIcon">';
     document.body.className = 'lightMode';
 }
 
