@@ -457,7 +457,7 @@ header {
 }
 
 .lightMode .arrowBtn {
-    filter: brightness(50%);
+    filter: brightness(0%);
 }
 
 .arrowBtn {
