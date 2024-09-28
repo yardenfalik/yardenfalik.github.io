@@ -28,6 +28,8 @@ for (let i = 0; i < HowManyCircle; i++) {
 
 setInterval(setColors, intervalTime);
 
+document.getElementById('age').textContent = getMyAge();
+
 function setColors() 
 {
     for (let i = 0; i < children.length; i++) {
@@ -58,6 +60,13 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 });
+
+function myAge() {
+  const birthday = new Date('2006-01-01');
+  const today = new Date();
+  const age = today.getFullYear() - birthday.getFullYear();
+  return age;
+}
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((element) => observer.observe(element));
