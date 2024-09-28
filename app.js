@@ -28,7 +28,7 @@ for (let i = 0; i < HowManyCircle; i++) {
 
 setInterval(setColors, intervalTime);
 
-document.getElementById('age').textContent = getMyAge();
+document.getElementById('age').textContent = myAge();
 
 function setColors() 
 {
