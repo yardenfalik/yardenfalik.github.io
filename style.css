@@ -395,6 +395,10 @@ header {
     color: #1D1D1F;
 }
 
+.lighyMode .blob {
+    background-color: #E8E8E3;
+}
+
 .themeButton {
     border: none;
     background-color: #ffffff00;
