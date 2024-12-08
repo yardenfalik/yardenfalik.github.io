@@ -31,7 +31,7 @@ function resetBackground()
         { opacity: 0 }
       ], {
         // sync options
-        duration: 1000,
+        duration: 100,
         iterations: 1
     });
 
