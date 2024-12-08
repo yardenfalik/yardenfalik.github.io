@@ -38,21 +38,6 @@ function setColors()
     }
 }
 
-function lightMode() 
-{
-    themeButton = document.getElementById('themeButton');
-
-    if (document.body.className === 'lightMode') 
-    {
-        themeButton.innerHTML = '<img src="img/moonIcon.png" class="moonIcon">';
-        document.body.className = 'darkMode';
-        return;
-    }
-
-    themeButton.innerHTML = '<img src="img/sunIcon.png" class="sunIcon">';
-    document.body.className = 'lightMode';
-}
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {

@@ -15,6 +15,8 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100vh;
+    width: 100vw;
 }
 
 body {
@@ -22,6 +24,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
     color: var(--color);
     width: 100%;
+    height: auto;
     margin: 0;
 
     display: flex;
@@ -29,10 +32,36 @@ body {
 
     background-size: 40px 40px;
     background-image: radial-gradient(circle, #ffffff 1px, #00000000 1px);
+
+    transition: background-color 2s ease;
+    transition: color 2s ease-in-out;
 }
 
 main {
     margin: 0 0 0 20px;
+}
+
+.blur {
+    z-index: -1;
+    -webkit-backdrop-filter: blur(200px);
+    backdrop-filter: blur(200px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.customBackground {
+    z-index: -2;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+    color: var(--background-color);
+    transition: background-color 20s ease-in-out, color 2s ease-in-out;
 }
 
 button {
@@ -91,6 +120,7 @@ a {
 a:hover {
     font-size: 2.5rem;
     transition: all 0.5s ease;
+    color: #1D1D1F;
 }
 
 .GitHubBtn {
@@ -109,10 +139,77 @@ a:hover {
     right: 20px;
 }
 
+.lightMode {
+    background-color: #ffffff;
+    color: #1D1D1F;
+}
+
+.lightMode a {
+    color: #1D1D1F;
+}
+
+.themeButton {
+    border: none;
+    background-color: #ffffff00;
+    color: #ffffff;
+    height: 35px;
+    width: 30px;
+    font-size: 200%;
+    border-radius: 50%;
+    padding: 0;
+    padding-bottom: 2.5px;
+    box-shadow: none;
+    background: none;
+    margin-right: 0;
+
+    position: absolute;
+    top: 30px;
+    right: 150px;
+}
+
+.themeButton:hover {
+    background-color: #ffffff00;
+}
+
+.sunIcon {
+    height: 30px;
+    padding: 5px 0 0 0;
+}
+
+.moonIcon {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+.sunIcon {
+    filter: brightness(0);
+}
+
+.moonIcon {
+    height: 30px;
+    padding: 5px 0 0 0;
+}
+
 @media screen and (max-width: 450px) {
 
     .backBtn {
         display: none;
     }
 
+    .themeButton {
+        border: none;
+        background-color: #ffffff00;
+        color: #ffffff;
+        height: 50px;
+        width: 50px;
+        font-size: 200%;
+        border-radius: 50%;
+        padding: 0;
+        padding-bottom: 2.5px;
+        left: 10px;
+        position: fixed;
+        bottom: 10px;
+        top: auto;
+        right: auto;
+    }
 }
