@@ -15,7 +15,7 @@
 
 html {
     scroll-behavior: smooth;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
 }
 
@@ -24,17 +24,8 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
     color: var(--color);
     width: 100%;
-    height: auto;
+    height: 100%;
     margin: 0;
-
-    display: flex;
-    flex-direction: column;
-
-    background-size: 40px 40px;
-    background-image: radial-gradient(circle, #ffffff 1px, #00000000 1px);
-
-    transition: background-color 2s ease;
-    transition: color 2s ease-in-out;
 }
 
 main {
@@ -45,23 +36,27 @@ main {
     z-index: -1;
     -webkit-backdrop-filter: blur(200px);
     backdrop-filter: blur(200px);
-    position: absolute;
+    
+    position: fixed;
     width: 100%;
     height: 100%;
+    top: 0;
     left: 0;
     bottom: 0;
+    right: 0;
 }
 
 .customBackground {
     z-index: -2;
-    position: absolute;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
     left: 0;
     bottom: 0;
-    width: 100%;
-    opacity: 0;
-    height: 100%;
-    color: var(--background-color);
-    transition: background-color 20s ease-in-out, color 2s ease-in-out;
+    right: 0;
+   
+    transition: background-color 2s ease-in-out;
 }
 
 button {
