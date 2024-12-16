@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --background-color: #0E0E0E;
@@ -45,22 +46,32 @@ section {
 
 .title-container {
     width: 750px;
-    margin: auto;
+    
     padding: 0;
     display: grid;
-
-    justify-content: center;
-    align-items: center;
-}
-
-.title-container h1 {
-    font-size: 5rem;
-    margin-top: auto;   
 }
 
 .title {
-    text-align: center;
+    text-align: left;
+    margin: auto 0 3rem 4rem;
+    font-size: 4rem;
+   
+}
+
+.title h1 {
     margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.title h3 {
+    margin: 0;
+    font-weight: 200;
+    font-size: 3rem;
+}
+
+.arrowBtn {
+    margin: right;
+    animation: arrow 4s infinite;
 }
 
 header button {
@@ -69,7 +80,7 @@ header button {
     color: #ffffff;
     border: solid 2px #ffffff;
     padding: 10px 25px;
-    margin-right: 50px;
+    
     font-size: 1rem;
     border-radius: 20px;
     cursor: pointer;
@@ -78,9 +89,21 @@ header button {
 
     background: linear-gradient(to right, var(--background-color) 50%, #ffffff 50%);
     background-size: 200% 100%;
-    background-position:left bottom;
-    margin-left:10px;
+    background-position: left bottom;
     transition:all 0.5s ease;
+}
+
+.toTheRight {
+    position: absolute;
+    right: 3rem;
+
+    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+
+.toTheRight > button {
+    margin-right: 10px;
 }
 
 nav {
@@ -94,6 +117,11 @@ nav {
     display: flex;
     justify-content: center;
     margin: auto;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
     padding: 3.5px 3px 3.5px 3px;
 }
 
@@ -330,7 +358,7 @@ header {
 }
 
 .contactButtonSmall {
-    display: none;
+    display: none !important;
 }
 
 .contactButtonSmall > button {
@@ -457,11 +485,6 @@ header {
     filter: brightness(0%);
 }
 
-.arrowBtn {
-    margin: auto;
-    animation: arrow 4s infinite;
-}
-
 @keyframes arrow {
     0% {
         opacity: 0;
@@ -479,6 +502,13 @@ header {
 
 @media screen and (max-width: 450px) {
 
+    .title {
+        margin: auto;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 200px;
+    }
+
     .aboutContent > .blob {
         animation: none;
     }
@@ -487,7 +517,7 @@ header {
         display: none;
     }
 
-    .title-container, .about > .aboutContent, .contact{
+    .about > .aboutContent, .contact{
         width: 90%;
     }
 
@@ -496,7 +526,6 @@ header {
     }
 
     nav {
-        margin-left: 30px;
         padding: 7px 6px 7px 6px;
     }
 
@@ -505,7 +534,7 @@ header {
     }
 
     .contactButtonSmall {
-        display: block;
+        display: block !important;
     }
 
     .contactButton {
