@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="img/appIcon.png">
+    <meta name="apple-touch-startup-image" content="img/appIcon.png">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <title>Yarden</title>
 </head>
 <body>
@@ -15,25 +18,30 @@
             <a href="#">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
+            <a class="contactButtonSmall" href="#contact">@</a>
           </div>
         </nav>
-        <button class="themeButton" id="themeButton" onclick="lightMode()"><img src="img/moonIcon.png" class="moonIcon"></button>
-        <a class="contactButtonSmall" href="#contact" style="float: right;"><button>@</button></a>
-        <a class="contactButton" href="#contact" style="float: right;"><button>Contact</button></a>
+        <div class="toTheRight">
+          <button class="themeButton" id="themeButton" onclick="lightMode()"><img src="img/moonIcon.png" class="moonIcon"></button>
+          <a class="contactButton" href="#contact"><button>Contact</button></a>
+        </div>
     </header>
     <section id="home" class="title-container">
       <div class="backgroundColors" id="backgroundColors">
+        <div class="grainBackground"></div>
         <div class="blur"></div>
         <div class="circles" id="circles">
         </div>
       </div>
-      <h1 class="title"><strong>Hi!</strong> I'm <strong>Yarden</strong>. <img class="wave" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f44b.svg" width="80px"></h1>
-      <a href="#about" class="arrowBtn"><img src="img/downArrowNew.png" height="50px"></a>
+      <div class="title">
+        <h1>Yarden Falik</h1>
+        <h3>Full Stack Developer</h3>
+      </div>
     </section>
 
     <section id="about" class="about">
       <div class="blur" style="z-index: -5;"></div>
-      <h1>About</h1>
+      <h1>ABOUT</h1>
       <div class="aboutContent">
         <div class="blob"></div>
         <div class="text">
@@ -44,7 +52,7 @@
     </section>
     
     <section id="projects" class="projects">
-      <h1 class="hidden">Projects</h1>
+      <h1 class="hidden">PROJECTS</h1>
       <br>
       <div class="projectTiles">
         <a href="https://github.com/yardenfalik/School-Website-Project" class="hidden">

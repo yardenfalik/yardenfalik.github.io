@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 :root {
     --background-color: #0E0E0E;
     --color: #E8E8E3;
+    --font: 'DM Sans', sans-serif;
 }
 
 ::selection {
@@ -21,7 +24,7 @@ html {
 
 body {
     background-color: var(--background-color);
-    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    font-family: var(--font);
     color: var(--color);
     width: 100%;
     height: 100%;
@@ -60,6 +63,7 @@ main {
 }
 
 button {
+    font-family: var(--font);
     color: var(--color);
     border: solid 2px var(--color);
     padding: 10px 25px;
@@ -187,6 +191,10 @@ a:hover {
 
 @media screen and (max-width: 450px) {
 
+    h1 {
+        text-align: center;
+        font-size: 4rem; 
+    }
     .backBtn {
         display: none;
     }
