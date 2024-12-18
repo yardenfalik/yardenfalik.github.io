@@ -22,7 +22,12 @@
           </div>
         </nav>
         <div class="toTheRight">
-          <button class="themeButton" id="themeButton" onclick="lightMode()"><img src="img/moonIcon.png" class="moonIcon"></button>
+          <button class="themeButton" id="themeButton" onclick="themeMenu()"><img src="img/moonIcon.png" class="moonIcon"></button>
+          <div class="themeMenu" id="themeMenu">
+            <a id="light" onclick="lightMode()">‎ ‎ Light</a>
+            <a id="dark" onclick="darkMode()">‎ ‎ Dark</a>
+            <a id="system" onclick="system()">‎ ‎ System</a>
+          </div>
           <a class="contactButton" href="#contact"><button>Contact</button></a>
         </div>
     </header>
