@@ -151,13 +151,25 @@ header a {
 header {
     display: flex;
     align-items: center;
-
     width: 100vw;
     height: 60px;
     position:fixed;
     top: 0;
     margin-top: 40px;
-    z-index: 10;
+    z-index: 10;  
+}
+
+.bluredBg {
+    position:fixed;
+    top: 10;
+    width: 100%;
+    height: 100px;
+    
+    backdrop-filter: blur(10px);
+
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0));
+
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0));
 }
 
 .nav_links a {
@@ -232,11 +244,20 @@ header {
 .projects {
     height: 150vh;
     background-size: 40px 40px;
-    background-image: radial-gradient(circle, #ffffff 1px, #00000000 1px);
+    background-image: radial-gradient(circle, #ffffff94 3px, #00000000 3px);
 }
 
 .projects h1, .about h1 {
     font-size: 3rem;
+}
+
+.about h1 {
+    margin: 0px auto;
+    width: 95%;
+}
+
+.about strong {
+    color: #ffffff;
 }
 
 .projects > a button {
@@ -283,15 +304,16 @@ header {
 
 .projectTile {
     background-color: #303030;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 8px 32px 0 #0000005e;
     overflow: hidden;
     transition: all 0.5s ease;
     color: var(--color);
+    border: solid 5px var(--color);
 }
 
 .projectTile:hover  {
-    border-radius: 0px;
+    border-radius: 2px;
     transition: all 0.5s ease;
 }
 
@@ -443,8 +465,17 @@ header {
     color: #1D1D1F;
 }
 
-.lighyMode .blob {
+.lightMode .blob {
     background-color: #E8E8E3;
+}
+
+.lightMode .about p {
+    font-weight: 800;
+    color: #4d4f54;
+}
+
+.lightMode .about strong {
+    color: #191b1d;
 }
 
 .themeButton {

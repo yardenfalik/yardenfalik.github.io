@@ -36,12 +36,26 @@ function saveTheme(theme)
         document.getElementById(id).textContent = "‎ ‎ " + id.charAt(0).toUpperCase() + id.slice(1)
     );
     document.getElementById(theme).textContent += " •";
+
+    closeMenu();
 }
 
 function themeMenu()
 {
     var menu = document.getElementById("themeMenu");
-    menu.style.display = (menu.style.display == "none") ? "grid" : "none";
+    if (menu.style.display === "none")
+    {
+        menu.style.display = "grid";
+    }
+    else
+    {
+        menu.style.display = "none";
+    }
+}
+
+function closeMenu()
+{
+    document.getElementById("themeMenu").style.display = "none";
 }
 
 function getTheme()
